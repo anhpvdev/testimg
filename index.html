@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="toll-train.css">
+    <script src="toll-add.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="addimg">
+            <div> <span>Thêm Ảnh</span></div>
+             <div><input type="text" id="img"></div>
+             <div><button onclick="addimg()">ADD</button></div>
+             <div><button><a href="trans-late.html">trans late</a></button></div>
+         </div>
+    </div>
+    <div class="main">
+        <div class="main-tool">
+                <div class="main-tool__top">
+                    <button onclick="save(), addimgnew()">lưu</button>
+                    <button id="clean" onclick="startdraw()">clean</button>
+                    <button onclick="addcanvastext()">add-text</button>
+                    <button  id="clear">clear</button>
+                    <button id="x" onclick="enddraw()">x</button>
+                </div>
+            <div class="main-tool__img">
+                <div class="img-raw" id="add-canvas-text">
+                    <div class="add-img-raw">
+                        <img id="img-raw" src="https://i.pinimg.com/736x/2d/98/27/2d9827ad151db666c9c99baa4648e19d.jpg" alt="ảnh">
+                    </div>
+                    <canvas id="canvas"></canvas>
+                    <canvas id="addtext"></canvas>
+                </div>
+                
+            </div>
+            
+        </div>
+        <div class="img-raw" id="bug">
+            <div class="add-img-raw">
+                <img id="img-raw" src="https://scontent.xx.fbcdn.net/v/t1.15752-9/289099335_809938023216711_4528648849038106347_n.png?stp=dst-png_s600x600&_nc_cat=100&ccb=1-7&_nc_sid=aee45a&_nc_ohc=3qUKicjmPjgAX-Ts7gz&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVIIHAmNNHBJEbaE6HDd_HEKUk8DsYA_NcQuaIaPy2SsFg&oe=62DBCB30" alt="ảnh">
+            </div>
+            <canvas id="canvas-img"></canvas>
+        </div>
+    </div>
+    <div class="footer">
+        
+    </div>
+    <script src="add-text.js"></script>
+    <script src="pain.js"></script>
+</body>
+</html>
