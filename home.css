@@ -81,7 +81,7 @@
     display: none;
 }
 
-.header .container .submenu:hover .menubar{
+.header .container .submenu:active .menubar{
     display: block;
 }
 
