@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jquery.js"></script>
+    <style>
+        #chatbox > li > div{
+            display: flex;
+            border-bottom: 2px solid red;
+        }
+        #chatbox > li > div > h3 {
+            width: 200px;
+            margin-right: 10px;
+        }
+        #chatbox > li > div > p {
+            min-width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <ul id="chatbox">
+
+    </ul>
+
+       <form id="form">
+        <input id="chatbtn" type="text">
+        <button id="send">Gui</button>
+       </form>
+
+    
+
+    <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
